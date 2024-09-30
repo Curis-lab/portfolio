@@ -295,8 +295,23 @@ section {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 10px;
+  transform: transform;
+  transition: transform 0.3s ease-in-out;
+  animation: bounce 1.2s ease-in-out infinite;
 }
 
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-15px);
+  }
+}
 .details-container {
   padding: 1.5rem;
   flex: 1;
